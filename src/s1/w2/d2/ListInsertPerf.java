@@ -37,7 +37,7 @@ public class ListInsertPerf {
         //   System.out.println("ArrayList  头插 " + N + " 次耗时: " + cost + " ms");
 
         long start1 = System.currentTimeMillis();
-        for(int i = 0 ; i <= N ; i ++ ) arrayList.addFirst(i);
+        for(int i = 0 ; i < N ; i ++ ) arrayList.addFirst(i);
         long cost1 = System.currentTimeMillis() - start1 ;
         System.out.println(cost1);
 
